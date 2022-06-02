@@ -54,10 +54,6 @@ header {
     justify-content: space-between;
 }
 
-.menu p {
-    margin: 112rem;
-}
-
 .menu p:hover {
     color:gray;
     transition: all .4s ease;
