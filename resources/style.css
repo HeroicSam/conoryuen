@@ -1,0 +1,137 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Poppins;
+    overflow: hidden;
+}
+
+:root {
+    --contrast-color: white;
+}
+
+body {
+    display: flex;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    display: inline-flex;
+    height: 7vh;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 18;
+}
+
+.name {
+    animation: slideDown 1s ease-in-out forwards;
+}
+
+.about {
+    animation: slideDown 1.3s ease-in-out forwards;
+}
+
+.portfolio {
+    animation: slideDown 1.5s ease-in-out forwards;
+}
+
+.contact {
+    animation: slideDown 1.7s ease-in-out forwards;
+}
+
+.name {
+    display: flex;
+    animation: slideDown 1s ease-in-out forwards;
+}
+
+.menu {
+    display: inline-flex;
+    width: 20rem;
+    justify-content: space-between;
+}
+
+.menu p {
+    margin: 1rem;
+}
+
+.menu p:hover {
+    color:gray;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    font-size: 5rem;
+    margin: 0;
+}
+.intro h1 {
+    margin: 2rem;
+}
+
+.intro h6 {
+    font-size: 1.2rem;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    animation: expand .8s ease forwards;
+    transition: all .8s ease;
+    background-color: #90b54a;
+
+}
+
+.overlay {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: -10;
+    background-color: var(--contrast-color);
+}
+
+@keyframes expand {
+0% {
+    transform: translateX(1400px);
+}
+100% {
+    transform: translateX(0px);
+}
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(100px) scale(.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+
+/* animation: slideDown 2s ease-in-out forwards; */
