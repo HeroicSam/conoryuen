@@ -4,12 +4,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family: Poppins;
+    font-family: 'Gowun Batang';
     overflow: hidden;
 }
 
 :root {
-    --contrast-color: white;
+    --contrast-color: #fceb4b;
 }
 
 body {
@@ -50,7 +50,7 @@ header {
 
 .menu {
     display: inline-flex;
-    width: 20rem;
+    width: 18rem;
     justify-content: space-between;
 }
 
@@ -65,18 +65,27 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 90%;
     height: 100%;
     font-size: 5rem;
     margin: 0;
 }
 .intro h1 {
-    margin: 2rem;
+    text-align: left;
+    font-weight: 200;
+    margin: 0;
 }
 
 .intro h6 {
     font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.intro h6:hover {
+    color: #a0c6f2;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .container {
@@ -88,8 +97,7 @@ header {
     height: 100vh;
     animation: expand .8s ease forwards;
     transition: all .8s ease;
-    background-color: #90b54a;
-
+    background-image: linear-gradient(to bottom right, #88c08f, #478940)
 }
 
 .overlay {
