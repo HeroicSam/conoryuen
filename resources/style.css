@@ -28,19 +28,19 @@ header {
 }
 
 .name {
-    animation: slideDown 1.5s ease-in-out forwards;
+    animation: slideDown 1.7s ease-in-out forwards;
 }
 
 .about {
-    animation: slideDown 1.8s ease-in-out forwards;
+    animation: slideDown 1.9s ease-in-out forwards;
 }
 
 .portfolio {
-    animation: slideDown 2s ease-in-out forwards;
+    animation: slideDown 2.2s ease-in-out forwards;
 }
 
 .contact {
-    animation: slideDown 2.2s ease-in-out forwards;
+    animation: slideDown 2.4s ease-in-out forwards;
 }
 
 .menu {
@@ -61,21 +61,90 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 90%;
     height: 100%;
     font-size: 5rem;
     margin: 0;
 }
 .intro h1 {
-    text-align: left;
     font-weight: 200;
     margin: 0;
 }
 
 .intro h6 {
+    position: relative;
+    margin: 0;
     font-size: 1.2rem;
     font-weight: 500;
+    font-family: 'Share Tech Mono';
+    width:max-content;
+}
+
+#dialogueOne::before,
+#dialogueOne::after,
+#dialogueTwo::before,
+#dialogueTwo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#dialogueOne {
+    border-right: 0.2em solid transparent;
+    white-space: nowrap;
+}
+
+#dialogueOne::before {
+    background: #65a264;
+    animation: 
+        typewriter 1.5s steps(20) forwards 2s;
+}
+
+#dialogueOne::after {
+    width: 0.125em;
+    background: white;
+    animation: 
+        typewriter 1.5s steps(20,end) forwards 2s,
+        blink 1.5s infinite;
+    border-right: 0.3em solid transparent;
+
+}
+
+/* #dialogueTwo::before {
+    background:#65a264;
+    animation: 
+        typewriter 2s steps(17) forwards 5s;
+} */
+
+/* #dialogueTwo::after {
+    width: 0.125em;
+    background:white;
+    animation: 
+        typewriter 2s steps(17) forwards 5s,
+        blink 750ms steps(17) infinite 5s;
+    border-right: 0.3em solid transparent;
+} */
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes disappear {
+    to {
+        display: none;
+    }
 }
 
 .intro h6:hover {
@@ -106,6 +175,8 @@ header {
     z-index: -10;
     background-color: var(--contrast-color);
 }
+
+/* General website animations */
 
 @keyframes expand {
 0% {
