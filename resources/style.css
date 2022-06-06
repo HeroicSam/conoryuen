@@ -207,6 +207,10 @@ main {
     grid-column-gap: 10%;
 }
 
+.text-container-two a{
+    text-decoration: underline;
+}
+
 /* Beginning transition background */
 
 .overlay {
