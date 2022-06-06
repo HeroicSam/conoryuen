@@ -6,6 +6,7 @@ body {
     font-family: 'Gowun Batang';
     flex-direction: column;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -17,13 +18,28 @@ body {
 
 body {
     display: flex;
-    width: 100%;
 }
 
-.newSection {
+section {
     position: relative;
-    height: 100rem;
+    height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+section:nth-of-type(2) {
+    background-color: green;
+}
+
+section:nth-of-type(3) {
+    background-color: yellow;
 }
 
 /* Header content */
@@ -48,12 +64,24 @@ header {
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
 .menu {
     display: inline-flex;
     width: 18rem;
     justify-content: space-between;
+}
+
+.name p a,
+.menu p a {
+    text-decoration: none;
+}
+
+.name p a:visited,
+.menu p a:visited {
+    color:inherit;
 }
 
 .menu p:hover,
@@ -63,7 +91,12 @@ header {
     cursor: pointer;
 }
 
+
 /* Intro/Homepage content */
+
+main {
+    scroll-snap-align: start;
+}
 
 .intro {
     position: relative;
@@ -140,6 +173,27 @@ header {
     background-image: linear-gradient(to bottom right, #88c08f, #478940)
 }
 
+/* About me section*/
+
+.section-header {
+    display: flex;
+    height: 20%;
+    width: 80%;
+    align-items: center;
+}
+
+.section-header h1 {
+    font-size: 4rem;
+}
+
+.section-header-content h1 {
+    font-size: 5rem;
+}
+
+.about-me {
+    height: 80%;
+}
+
 /* Beginning transition background */
 
 .overlay {
@@ -175,6 +229,20 @@ header {
     color: black;
     background-color: white;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-scrolled  p a:hover{
+    color: lightgray;
+    transition: all .4s ease;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
 }
 
 /* General website animations */
