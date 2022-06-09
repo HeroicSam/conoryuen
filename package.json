@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/HeroicSam/conoryuen/issues"
   },
-  "homepage": "https://github.com/HeroicSam/conoryuen#readme"
+  "homepage": "https://github.com/HeroicSam/conoryuen#readme",
+  "devDependencies": {
+    "stylelint": "^14.9.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^26.0.0"
+  }
 }
