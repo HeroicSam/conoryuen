@@ -137,7 +137,7 @@ header {
 		left: 0;
 		width: 0.125em;
 		background: black;
-		animation: typewriter 2s steps(35,end) forwards 2.7s, blink 1.5s 15;
+		animation: typewriter 2s steps(35,end) forwards 2.7s, blink 1.5s infinite;
 		border-right: 0.3em solid transparent;
 	}
 }
@@ -177,7 +177,7 @@ section {
 
 .fade-in {
 	opacity: 0;
-	transition: opacity 250ms ease-in;
+	transition: opacity 2s ease-in;
 }
 
 .fade-in.appear {
