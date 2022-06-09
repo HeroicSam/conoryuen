@@ -1,0 +1,227 @@
+// Root Variables
+
+$text-inverse: #333;
+$fs-primary: 20px;
+
+
+
+// Top-level Selectors 
+
+:any-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+    font-size: $fs-primary;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+p {
+    font-size: $fs-primary;
+}
+
+// Header
+
+header {
+	color: black;
+	position: fixed;
+	height: max(7vh, 4rem);
+	width: 100%;
+	padding: 0 10%;
+	z-index: 999;
+	transition: background 250ms ease-in;
+	border-bottom: 0px solid transparent;
+	// border-bottom: 1px solid red;
+}
+
+.header {
+	display: inline-flex;
+	height: 100%;
+	width: 80%;
+	align-items: center;
+	justify-content: space-between;
+
+    div:nth-child(1) {
+        animation: slideDown 2s ease-in-out forwards;
+    }
+
+    p {
+		&:hover {
+			color: $text-inverse;
+			transition: all .4s ease;
+			cursor: pointer;
+		}
+	}
+
+}
+
+.menu {
+	display: inline-flex;
+    width: 15%;
+	justify-content: space-between;
+
+	p {
+		&:hover {
+			color: $text-inverse;
+			transition: all .4s ease;
+			cursor: pointer;
+		}
+        &:nth-child(1) {
+            animation: slideDown 2.3s ease-in-out forwards;
+        }
+        &:nth-child(2) {
+            animation: slideDown 2.5s ease-in-out forwards;
+        }
+        &:nth-child(3) {
+            animation: slideDown 2.7s ease-in-out forwards;
+        }
+	}
+}
+
+.intro {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: 100%;
+	margin: 0;
+	color: black;
+
+	h6 {
+		position: relative;
+		margin: 0;
+        font-size: 2rem;
+		font-weight: 400;
+		font-family: 'Share Tech Mono';
+		width: max-content;
+		&:hover {
+			color: #a0c6f2;
+			cursor: pointer;
+		}
+	}
+}
+
+#dialogue {
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+        background-color: white;
+		animation: typewriter 2s steps(35) forwards 2.7s;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 0.125em;
+		background: black;
+		animation: typewriter 2s steps(35,end) forwards 2.7s, blink 1.5s 15;
+		border-right: 0.3em solid transparent;
+	}
+}
+
+.main-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	// animation: expand 1.4s ease forwards;
+	transition: all .8s ease;
+    // background-image: linear-gradient(to bottom right, #88c08f, #478940);
+    video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        opacity: .7;
+    }
+}
+
+section {
+    position: relative;
+    height: 100vh;
+}
+
+// Applied Classes
+
+.nav-scrolled {
+	color: black;
+	background-color: white;
+	// box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fade-in {
+	opacity: 0;
+	transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+	opacity: 1;
+}
+
+// Animations
+
+@keyframes expand {
+	0% {
+		transform: translateX(calc(100vw * 2));
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+@keyframes slideIn {
+	0% {
+		transform: translateX(100px) scale(.2);
+	}
+	100% {
+		transform: translateX(0px) scale(1);
+	}
+}
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+@keyframes typewriter {
+	to {
+		left: 100%;
+	}
+}
+@keyframes blink {
+	to {
+		background: transparent;
+	}
+}
+@keyframes disappear {
+	to {
+		display: none;
+	}
+}
