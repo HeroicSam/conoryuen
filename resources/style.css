@@ -94,6 +94,9 @@ header {
   color: #a0c6f2;
   cursor: pointer;
 }
+.intro img {
+  border-radius: 50%;
+}
 
 #dialogue::before {
   content: "";
