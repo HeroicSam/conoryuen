@@ -63,3 +63,22 @@ const appearOnScroll = new IntersectionObserver(function(
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
 })
+
+const menuBtn = document.querySelector('.menu-btn');
+const mobileMenu = document.querySelector('nav');
+let menuToggle = false;
+
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('open');
+    console.log(menuToggle);
+        if (!menuToggle) {
+        mobileMenu.classList.add('nav-open')
+        mobileMenu.classList.remove('nav-close')
+        menuToggle = true;
+    } else {
+        mobileMenu.classList.remove('nav-open')
+        mobileMenu.classList.add('nav-close')
+        menuToggle = false;
+    };
+    // mobileMenu.classList.toggle('nav-open');
+});
