@@ -1,6 +1,13 @@
 // Root Variables
 
+$text-primary: #000;
+$text-titles: #B1B1B1;
 $text-inverse: rgb(104, 104, 104);
+
+$ff-primary: 'Gowun Batang';
+$ff-secondary: 'Poppins';
+$ff-special: 'Share Tech Mono';
+
 $fs-primary: 20px;
 
 
@@ -17,10 +24,19 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	overflow-x: hidden;
 	scroll-behavior: smooth;
     font-size: $fs-primary;
 }
+
+html {
+	overflow: scroll;
+}
+
+::webkit-scrollbar {
+	display: none;
+	background: transparent;
+}
+
 
 h1,
 h2,
@@ -31,10 +47,16 @@ p {
 
 p {
     font-size: $fs-primary;
-
+	font-family: $ff-primary;
+	font-weight: bold;
 	@media (min-width: 1920px) {
 		font-size: 24px;
 	}
+}
+
+section {
+	position: relative;
+	height: 100vh;
 }
 
 // Header
@@ -164,7 +186,7 @@ nav {
 		margin: 0;
         font-size: 2rem;
 		font-weight: 400;
-		font-family: 'Share Tech Mono';
+		font-family: $ff-special;
 		width: max-content;
 		&:hover {
 			color: #478940;
@@ -303,17 +325,143 @@ section {
 	}
 }
 
+// Portolfio 
+
+.portfolio-header {
+	display: flex;
+	justify-content: center;
+	height: max(7vh, 4rem);
+	width: 100%;
+}
+
+.portfolio-menu {
+	display: inline-flex;
+	height: 100%;
+	width: 60%;
+	align-items: center;
+	justify-content: center;
+
+	p {
+		padding: 0 10px;
+		cursor: pointer;
+	}
+}
+
+.lines {
+	height: 1px;
+	width: 50px;
+	margin-top: 4px;
+	background-color: black;
+}
+
+.works-container {
+	display: inline-flex;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 8%;
+	margin-top: 4rem;
+	padding: 0 5%;
+	// padding: 0 5%;
+
+	h1 {
+		font-size: 4rem;
+		font-weight: 400;
+	}
+
+	h2 {
+		font-family: $ff-secondary;
+		font-size: 1.25rem;
+		font-weight: 400;
+		margin-top: .25rem;
+		margin-bottom: 2rem;
+		color: $text-titles;
+	}
+
+	h3 {
+		font-family: $ff-secondary;
+		font-size: 1.25rem;
+		font-weight: 400;
+		text-align: justify;
+		color: $text-primary;
+	}
+}
+
+.info-container {
+	display: flex;
+	flex-direction: column;
+	width: min(40%, 700px);
+
+}
+
+.links-container {
+	display: inline-flex;
+	justify-content: space-between;
+	margin-top: 2.5rem;
+
+}
+
+.photo-container {
+	max-width: auto;
+	height: auto;
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+
 // Applied Classes
 
-.nav-scrolled {
-	color: black;
-	background-color: white;
-	// box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+.header-display {
+	animation: slideUp 2.5s ease-in-out forwards;
 }
+
+.nav-scrolled {
+	p {
+		animation: slideUp 2.2s ease-in-out forwards;
+	}
+}
+
+.nav-scrolled-2 {
+	p {
+        &:nth-child(1) {
+            animation: slideUp 1.7s ease-in-out forwards;
+        }
+        &:nth-child(2) {
+            animation: slideUp 1.5s ease-in-out forwards;
+        }
+        &:nth-child(3) {
+            animation: slideUp 1.3s ease-in-out forwards;
+        }
+	}
+}
+
+.nav-unscrolled {
+	animation: slideDown 2s ease-in-out forwards;
+}
+
+.nav-unscrolled-2 {
+	p {
+        &:nth-child(1) {
+            animation: slideDown 2.3s ease-in-out forwards;
+        }
+        &:nth-child(2) {
+            animation: slideDown 2.5s ease-in-out forwards;
+        }
+        &:nth-child(3) {
+            animation: slideDown 2.7s ease-in-out forwards;
+        }
+	}
+}
+
+
 
 .fade-in {
 	opacity: 0;
-	transition: opacity 2s ease-in;
+	transition: opacity 1.6s ease-in;
 }
 
 .fade-in.appear {
@@ -352,6 +500,15 @@ section {
 	}
 	100% {
 		transform:translateX(0px);
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-100px);
 	}
 }
 

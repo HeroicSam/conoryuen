@@ -21,6 +21,8 @@ const sectionOneOptions = {
 
 const header = document.querySelector('header');
 const sectionOne = document.querySelector('main');
+const headerName = document.querySelector('.name');
+const menu = document.querySelector('.menu');
 
 const faders = document.querySelectorAll('.fade-in');
 
@@ -30,9 +32,17 @@ const sectionOneObserver = new IntersectionObserver(function(
     ) {
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
-                header.classList.add('nav-scrolled');
+                headerName.classList.add('nav-scrolled');
+                menu.classList.add('nav-scrolled-2');
+                header.classList.remove('nav-unscrolled');
+                menu.classList.remove('nav-unscrolled-2');
+                header.classList.add('header-display');
             } else {
-                header.classList.remove('nav-scrolled');
+                header.classList.remove('header-display');
+                headerName.classList.remove('nav-scrolled');
+                menu.classList.remove('nav-scrolled-2');
+                header.classList.add('nav-unscrolled');
+                menu.classList.add('nav-unscrolled-2');
             }
         });
 
@@ -42,7 +52,7 @@ sectionOneOptions);
 sectionOneObserver.observe(sectionOne);
 
 const appearOptions = {
-    threshold: 1,
+    // threshold: 1,
     rootMargin: '0px 0px -50px 0px'
 };
 
