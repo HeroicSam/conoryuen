@@ -262,7 +262,7 @@ section {
 }
 @media screen and (max-width: 615px) {
   .down-arrow img {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     height: 25px;
     width: 25px;
   }
