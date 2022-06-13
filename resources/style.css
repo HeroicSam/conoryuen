@@ -152,6 +152,7 @@ nav {
 }
 .intro h1 {
   font-weight: 400;
+  font-family: "Gowun Batang";
 }
 
 .down-arrow {
@@ -227,25 +228,29 @@ nav {
 
 #hotswaps:hover {
   cursor: pointer;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
   background-color: #DFFCE6;
+}
+
+.active {
+  background: linear-gradient(#C84E89, #F15F79);
 }
 
 #allodds:hover {
   cursor: pointer;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
   background-color: #E6DFFC;
 }
 
 #personal:hover {
   cursor: pointer;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
   background-color: #FCE6DF;
 }
 
 .img-container {
   width: 50%;
-  background-color: blue;
+  background-color: white;
 }
 
 .menu-btn {
