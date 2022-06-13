@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>hello!</title>
+        <title>Portfolio | Conor Yuen</title>
         <link rel="stylesheet" href="./resources/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
             <div class="header">
                 <div class="name">
-                    <p><a href='#name'>conor yuen</a></p>
+                    <p><a href='#name'>Conor Yuen</a></p>
                 </div>
                 <div class="menu" id="myLinks">
-                    <p><a href='#portfolio'>work</a></p>
-                    <p><a href='#about-me'>about me</a></p>
-                    <p><a href='#contact'>contact</a></p>
+                    <p><a href='#portfolio'>WORK</a></p>
+                    <p><a href='#about-me'>ABOUT ME</a></p>
+                    <p><a href='#contact'>CONTACT</a></p>
                 </div>
                 <div class="menu-btn">
                     <div class="menu-btn_burger"></div>
@@ -39,46 +38,51 @@
             </div>
         </nav>
 
-        <main class="main-container" id="name">
+        <main class="main-container">
             <div class="intro">
-                <h6 id="dialogue">hi, i'm Conor. <a href='#portfolio'>care to check out my work?</a></h6>
+                <h1>Hello there!</h1>
+                <h1><br>I’m Conor Yuen,
+                    <br>a programmer and designer
+                    <br>specializing in UI & UX.</h1>
             </div>
             <div class="down-arrow">
                 <img src="./resources/icons/down-arrow.svg">
             </div>
+            <video src="./resources/img/video.mp4" autoplay loop muted></video>
         </main>
 
-        <section id="portfolio" class="fade-in">
-            <div class="portfolio-header">
-                <div class="portfolio-menu">
-                    <p><a href="#hotswaps">hotswaps</a></p>
-                    <div class="lines"></div>
-                    <p><a href="#hotswaps">against all odds</a></p>
-                    <div class="lines"></div>
-                    <p><a href="#hotswaps">personal website</a></p>
-                </div>
-            </div>
-            <div class="works-container">
-                <!-- info -->
-                <div class="info-container">
-                    <h1>hotswaps</h1>
-                    <h2>co-founder  ·  product designer</h2>
-                    <h3>Hotswaps is a modern, curated marketplace created to make luxury mechanical keyboards more accessible and affordable.</h3>
-                    <br>
-                    <h3>I designed the site with the goal of creating an enjoyable shopping experience, which is why users first land on the unique product feed upon arrival.</h3>
-                    <br>
-                    <h3>I’m super proud of how far Hotswaps has come and I hope you’ll take the time to check it out (and look at a few cool keyboards)!</h3>
-                    <div class="links-container">
-                        <h3><a>more info</a></h3>
-                        <h3><a href="https://www.hotswaps.io">website -></a></h3>
+        <section class="portfolio-container">
+            <div class="info-container">
+                <h1>Works</h1>
+                <div class="info-container-2">
+                    <div class="info-container-3" id="hotswaps">
+                        <h3>Hotswaps</h3>
+                        <div class="info-container-4">
+                            <p>Curated, online marketplace</p>
+                            <p>Co-Founder ·  Product designer</p>
+                        </div>
+                    </div>
+                    <div class="info-container-3" id="allodds">
+                        <h3>Against All Odds</h3>
+                        <div class="info-container-4">
+                            <p>Inventory management app</p>
+                            <p>Design consultant</p>
+                        </div>
+                    </div>
+                    <div class="info-container-3" id="personal">
+                        <h3>This Website</h3>
+                        <div class="info-container-4">
+                            <p>Showing off my portfolio!</p>
+                            <p>Designer/Coder</p>
+                        </div>
                     </div>
                 </div>
-                <!-- pic -->
-                <div class="photo-container">
-                    <img src="./resources/img/hotswaps.jpg">
-                </div>
+            </div>
+            <div class="img-container">
+                <h1>hello</h1>
             </div>
         </section>
+
     </body>
     <script src="./index.js"></script>
 </html>

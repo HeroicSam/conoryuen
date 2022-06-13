@@ -19,12 +19,18 @@ const sectionOneOptions = {
     rootMargin: "-200px 0px 0px 0px"
 };
 
+const slideOptions = {
+
+};
+
 const header = document.querySelector('header');
 const sectionOne = document.querySelector('main');
 const headerName = document.querySelector('.name');
 const menu = document.querySelector('.menu');
 
 const faders = document.querySelectorAll('.fade-in');
+const leftSliders = document.querySelectorAll('.left-slide');
+const rightSliders = document.querySelectorAll('.right-slide');
 
 const sectionOneObserver = new IntersectionObserver(function(
     entries, 
@@ -72,7 +78,45 @@ const appearOnScroll = new IntersectionObserver(function(
 
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
-})
+});
+
+
+const slideOnScrollLeft = new IntersectionObserver(function(
+    entries,
+    slideOnScrollLeft
+) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add('appear');
+            appearOnScroll.unobserve(entry.target);
+        }
+    });
+}, slideOptions); 
+
+leftSliders.forEach(slider => {
+    appearOnScroll.observe(slider);
+});
+
+const slideOnScrollRight = new IntersectionObserver(function(
+    entries,
+    slideOnScrollRight
+) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add('appear');
+            appearOnScroll.unobserve(entry.target);
+        }
+    });
+}, slideOptions); 
+
+rightSliders.forEach(slider => {
+    appearOnScroll.observe(slider);
+});
+
 
 const menuBtn = document.querySelector('.menu-btn');
 const mobileMenu = document.querySelector('nav');
