@@ -4,7 +4,7 @@ $text-primary: #000;
 $text-titles: #B1B1B1;
 $text-inverse: #FFF;
 
-$ff-primary: 'Gowun Batang';
+$ff-primary: 'Playfair Display';
 $ff-secondary: 'Poppins';
 
 $fs-primary: 24px;
@@ -58,7 +58,7 @@ header {
 	width: 90%;
 	align-items: center;
 	justify-content: space-between;
-	font-family: Poppins;
+	font-family: $ff-secondary;
 
     div:nth-child(1) {
         animation: slideDown 2s ease-in-out forwards;
@@ -166,7 +166,6 @@ nav {
 	width: 100%;
 	height: 100%;
 	color: white;
-	font-size: 1.5rem;
 
 	video {
 
@@ -181,8 +180,9 @@ nav {
 	position: absolute;
 
 	h1 {
-		font-weight: 400;
-		font-family: "Gowun Batang";
+		font-weight: 300;
+		font-size: 60px;
+		font-family: $ff-primary;
 	}
 }
 
@@ -224,7 +224,7 @@ nav {
 	width: 50%;
 
 	h1 {
-		font-family: 'Gowun Batang';
+		font-family: $ff-primary;
 		font-size: 2.5rem;
 		font-weight: 500;
 		margin-bottom: 3rem;
@@ -243,7 +243,7 @@ nav {
 	padding-bottom: 1.2rem;
 
 	h3 {
-		font-family: Poppins;
+		font-family: $ff-secondary;
 		font-weight: 500;
 		font-size: 24px;
 		margin-bottom: 0;
@@ -257,7 +257,7 @@ nav {
 	justify-content: space-between;
 
 	p {
-		font-family: Poppins;
+		font-family: $ff-secondary;
 		font-size: 14px;
 		font-weight: 300;
 	}
@@ -265,30 +265,38 @@ nav {
 
 #hotswaps:hover {
 	cursor: pointer;
-	transition: background-color .7s ease-in-out;
+	transition: background-color .5s ease-in-out;
 	background-color: #DFFCE6;
 }
 
-.active {
-	background: linear-gradient(#C84E89, #F15F79);
+.hotswaps-active {
+	background: linear-gradient(#72C6EF, #004E8F);
 }
+
 
 #allodds:hover {
 	cursor: pointer;
-	transition: background-color .7s ease-in-out;
+	transition: background-color .5s ease-in-out;
 	background-color: #E6DFFC;
+}
+
+.allodds-active {
+	background: linear-gradient(#C84E89, #F15F79);
 }
 
 #personal:hover {
 	cursor: pointer;
-	transition: background-color .7s ease-in-out;
+	transition: background-color .5s ease-in-out;
 	background-color: #FCE6DF;
+}
+
+.personal-active {
+	background: linear-gradient(#4776E6, #8E54E9);
 }
 
 .img-container {
 	width: 50%;
 	// background: linear-gradient(#2980B9, #2C3E50);
-	background-color: white;
 }
 
 // Hamburger Menu
@@ -420,16 +428,15 @@ nav {
 
 // Animations
 
-@keyframes expand {
-	0% {
-		transform: translateX(calc(100vw * 2));
-	}
-	100% {
-		transform: translateX(0px);
-	}
-}
 @keyframes slideIn {
-	0% {
+	0% {@keyframes expand {
+		0% {
+			transform: translateX(calc(100vw * 2));
+		}
+		100% {
+			transform: translateX(0px);
+		}
+	}
 		transform: translateX(100px) scale(.2);
 	}
 	100% {
@@ -471,16 +478,6 @@ nav {
 	}
 }
 
-@keyframes typewriter {
-	to {
-		left: 100%;
-	}
-}
-@keyframes blink {
-	to {
-		background: transparent;
-	}
-}
 @keyframes disappear {
 	to {
 		display: none;

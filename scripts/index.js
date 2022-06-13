@@ -141,18 +141,24 @@ menuBtn.addEventListener('click', () => {
 
 $(document).ready(function() {
     $("#hotswaps").hover(function() {
-        $(".img-container").css("background-color","black");
+        $(".img-container").addClass("hotswaps-active");
+    }, function () {
+        $(".img-container").removeClass("hotswaps-active");
     });
 });
 
 $(document).ready(function() {
     $("#allodds").hover(function() {
-        $(".img-container").css("background-color","green");
+        $(".img-container").addClass("allodds-active");
+    }, function () {
+        $(".img-container").removeClass("allodds-active");
     });
 });
 
 $(document).ready(function() {
     $("#personal").hover(function() {
-        $(".img-container").css("background-color","blue");
+        $(".img-container").addClass("personal-active");
+    }, function() {
+        $(".img-container").removeClass("personal-active");
     });
 });
