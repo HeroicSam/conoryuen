@@ -150,8 +150,10 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#allodds").hover(function() {
         $(".img-container").addClass("allodds-active");
+        $(".asset-container").addClass("allodds-asset");
     }, function () {
         $(".img-container").removeClass("allodds-active");
+        $(".asset-container").removeClass("allodds-asset");
     });
 });
 

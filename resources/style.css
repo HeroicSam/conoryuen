@@ -226,6 +226,11 @@ nav {
   font-weight: 300;
 }
 
+.asset-container {
+  height: 80%;
+  width: 80%;
+}
+
 #hotswaps:hover {
   cursor: pointer;
   transition: background-color 0.5s ease-in-out;
@@ -243,7 +248,14 @@ nav {
 }
 
 .allodds-active {
-  background: linear-gradient(#C84E89, #F15F79);
+  background: linear-gradient(135deg, #BDA1A4, #566191);
+}
+
+.allodds-asset {
+  background-image: url("./img/allodds2x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 #personal:hover {
@@ -258,6 +270,9 @@ nav {
 
 .img-container {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-btn {
