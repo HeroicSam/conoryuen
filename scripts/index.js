@@ -140,27 +140,37 @@ menuBtn.addEventListener('click', () => {
 // jQuery
 
 $(document).ready(function() {
-    $("#hotswaps").hover(function() {
-        $(".img-container").addClass("hotswaps-active");
-    }, function () {
-        $(".img-container").removeClass("hotswaps-active");
-    });
-});
+    // $("#hotswaps").hover(function() {
+    //     $(".img-container").addClass("hotswaps-active");
+    //     $(".asset-container").addClass("hotswaps-asset");
+    // }, function () {
+    //     $(".img-container").removeClass("hotswaps-active");
+    //     $(".asset-container").removeClass("hotswaps-asset");
+    // });
 
-$(document).ready(function() {
     $("#allodds").hover(function() {
         $(".img-container").addClass("allodds-active");
         $(".asset-container").addClass("allodds-asset");
+        $(".img-container").removeClass("hotswaps-active");
+        $(".asset-container").removeClass("hotswaps-asset");
     }, function () {
         $(".img-container").removeClass("allodds-active");
         $(".asset-container").removeClass("allodds-asset");
+        $(".img-container").addClass("hotswaps-active");
+        $(".asset-container").addClass("hotswaps-asset");
+        
+    });
+
+    $("#personal").hover(function() {
+        $(".img-container").addClass("personal-active");
+        $(".asset-container").addClass("personal-asset");
+        $(".img-container").removeClass("hotswaps-active");
+        $(".asset-container").removeClass("hotswaps-asset");
+    }, function() {
+        $(".img-container").removeClass("personal-active");
+        $(".asset-container").removeClass("personal-asset");
+        $(".img-container").addClass("hotswaps-active");
+        $(".asset-container").addClass("hotswaps-asset");
     });
 });
 
-$(document).ready(function() {
-    $("#personal").hover(function() {
-        $(".img-container").addClass("personal-active");
-    }, function() {
-        $(".img-container").removeClass("personal-active");
-    });
-});

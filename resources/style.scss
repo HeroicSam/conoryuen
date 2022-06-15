@@ -178,6 +178,14 @@ nav {
 
 .intro {
 	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 75%;
+	height: 20%;
+	transform: translateX(0%);
 
 	h1 {
 		font-weight: 300;
@@ -278,6 +286,13 @@ nav {
 	background: linear-gradient(#72C6EF, #004E8F);
 }
 
+.hotswaps-asset {
+	background-image: url('./img/hotswaps.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;	
+}
+
 
 #allodds:hover {
 	cursor: pointer;
@@ -308,12 +323,18 @@ nav {
 	background: linear-gradient(#4776E6, #8E54E9);
 }
 
+.personal-asset {
+	background-image: url('./img/personalsite.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
 .img-container {
 	width: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	// background: linear-gradient(#2980B9, #2C3E50);
 }
 
 // Hamburger Menu
@@ -347,7 +368,7 @@ nav {
 		position: absolute;
 		width: 30px;
 		height: 3px;
-		background: inherit;
+		background: white;
 		border-radius: 10px;
 		box-shadow: 0 2px 5px rgba(225, 101, 47, .2);
 		transition: all .5s ease-in-out;
@@ -359,7 +380,7 @@ nav {
 		position: absolute;
 		width: 30px;
 		height: 3px;
-		background: inherit;
+		background: white;
 		border-radius: 10px;
 		box-shadow: 0 2px 5px rgba(225, 101, 47, .2);
 		transition: all .5s ease-in-out;
@@ -512,6 +533,43 @@ nav {
 		transform: translateY(0px);
 	}
 }
+
+@keyframes greeting {
+	0% {
+		content: 'Hey there';
+	}
+	10% {
+		content: '你好';
+	}
+	20% {
+		content: 'こんにちは';
+	}
+	30% {
+		content: 'Aloha';
+	}
+	40% {
+		content: 'привіт';
+	}
+	50% {
+		content: 'Hallo';
+	}
+	60% {
+		content: 'Dia dhuit';
+	}
+	70% {
+		content: 'Ciao';
+	}
+	80% {
+		content: '안녕하세요';
+	}
+	90% {
+		content: 'Witam';
+	}
+	100% {
+		content: 'สวัสดี';
+	}
+}
+
 
 .menu-btn.open .menu-btn_burger {
 	transform: translateX(-50px);
