@@ -297,6 +297,71 @@ nav {
   align-items: center;
 }
 
+.about-contact {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 150vh;
+  width: 100%;
+  margin-top: 200vh;
+  background-color: #aedeb8;
+}
+
+.about-container {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  background-color: beige;
+}
+
+.info-container-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin-left: 5%;
+  width: 40%;
+}
+.info-container-5 h1 {
+  font-family: "Playfair Display";
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.info-container-5 p {
+  margin-top: 1rem;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 0.833333333rem;
+}
+
+.info-container-6 {
+  text-align: justify;
+  border-top: 1px solid black;
+}
+
+.gif-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 50%;
+}
+.gif-container img {
+  border-radius: 50%;
+  height: 50%;
+  width: auto;
+}
+
+.contact-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
 .menu-btn {
   position: relative;
   display: flex;
