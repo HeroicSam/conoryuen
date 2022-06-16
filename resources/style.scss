@@ -222,6 +222,11 @@ nav {
 	height: 100vh;
 	width: 100%;
 	margin-top: 100vh;
+
+	@media screen and (max-width: 990px) {
+		height: 60vh;
+
+	}
 }
 
 .info-container {
@@ -238,10 +243,17 @@ nav {
 		font-size: 2.5rem;
 		font-weight: 500;
 		margin-bottom: 3rem;
+
+		@media screen and (max-width: 990px) {
+			font-size: 1.5rem;
+			margin-top: 0;
+	
+		}
 	}
 
 	@media screen and (max-width: 990px) {
 		width: 100%;
+
 	}
 
 }
@@ -261,6 +273,10 @@ nav {
 		font-weight: 500;
 		font-size: 24px;
 		margin-bottom: 0;
+
+		@media screen and (max-width: 500px) {
+			font-size: 20px;
+		}
 		
 	}
 
@@ -274,6 +290,10 @@ nav {
 		font-family: $ff-secondary;
 		font-size: 14px;
 		font-weight: 300;
+
+		@media screen and (max-width: 500px) {
+			font-size: 11px;
+		}
 	}
 }
 
@@ -357,6 +377,15 @@ nav {
 	width: 100%;
 	margin-top: 200vh;
 	background-color: beige;
+
+	@media screen and (max-width:1100px) {
+		height: 150vh;
+	}
+
+	@media screen and (max-width: 990px) {
+		margin-top: 160vh;
+
+	}
 }
 
 .about-container {
@@ -366,6 +395,12 @@ nav {
 	align-items: center;
 	height: 60vh;
 	width: 100%;
+
+	@media screen and (max-width:1100px) {
+		display: flex;
+		flex-direction: column;
+		height: 70vh;
+	}
 }
 
 .info-container-5 {
@@ -381,6 +416,10 @@ nav {
 		font-size: 2.5rem;
 		font-weight: 500;
 		margin-bottom: 1rem;
+
+		@media screen and (max-width: 1300px) {
+			font-size: 42px;
+		}
 	}
 
 	p {
@@ -389,6 +428,18 @@ nav {
 		font-weight: 300;
 		font-size: 0.833333333rem;
 
+		@media screen and (max-width:1100px) {
+			font-size: 16px;
+		}
+
+	}
+
+	@media screen and (max-width:1100px) {
+		width: 80%;
+
+		h1 {
+			font-size: 48px;
+		}
 	}
 }
 
@@ -407,8 +458,13 @@ nav {
 
 	img {
 		border-radius: 50%;
-		max-height: 50%;
+		max-height: 80%;
 		width: auto;
+	}
+
+	@media screen and (max-width:1100px) {
+		height: 30%;
+		margin-left: 0;
 	}
 }
 
@@ -423,11 +479,19 @@ nav {
 		font-size: 6rem;
 		font-weight: 500;
 		font-family: $ff-primary;
+
+		@media screen and (max-width: 1300px) {
+			font-size: 4rem;
+		}
 	}
 
 	h2 {
 		font-weight: 400;
 		font-family: $ff-primary;
+
+		@media screen and (max-width: 1300px) {
+			font-size: 1rem;
+		}
 	}
 }
 
@@ -437,13 +501,47 @@ nav {
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
+
+	@media screen and (max-width: 900px) {
+		h1 {
+			font-size: 64px;
+		}
+	}
+
+	@media screen and (max-width: 700px) {
+		h1 {
+			font-size: 42px;
+		}
+	}
+
 }
 
 .contact-information {
 	display: inline-flex;
 	justify-content: space-between;
-	width: 60%;
+	width: max(60%, 1100px);
 	margin-top: 2rem;
+
+	@media screen and (max-width: 1300px) {
+		width: 900px;
+
+		margin-top: 1rem	}
+
+	@media screen and (max-width: 900px) {
+		max-width: 700px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	@media screen and (max-width: 700px) {
+		max-width: 500px;
+
+	}
+
+	@media screen and (max-width: 500px) {
+		max-width: 400px;
+
+	}
 }
 
 .info-box {
@@ -458,6 +556,10 @@ nav {
 
 	a {
 		text-decoration: underline;
+	}
+
+	@media screen and (max-width: 900px) {
+		margin-top: 1rem;
 	}
 }
 

@@ -190,6 +190,11 @@ nav {
   width: 100%;
   margin-top: 100vh;
 }
+@media screen and (max-width: 990px) {
+  .portfolio-container {
+    height: 60vh;
+  }
+}
 
 .info-container {
   display: flex;
@@ -205,6 +210,12 @@ nav {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 3rem;
+}
+@media screen and (max-width: 990px) {
+  .info-container h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
 }
 @media screen and (max-width: 990px) {
   .info-container {
@@ -228,6 +239,11 @@ nav {
   font-size: 24px;
   margin-bottom: 0;
 }
+@media screen and (max-width: 500px) {
+  .info-container-3 h3 {
+    font-size: 20px;
+  }
+}
 
 .info-container-4 {
   display: inline-flex;
@@ -237,6 +253,11 @@ nav {
   font-family: "Poppins";
   font-size: 14px;
   font-weight: 300;
+}
+@media screen and (max-width: 500px) {
+  .info-container-4 p {
+    font-size: 11px;
+  }
 }
 
 .asset-container {
@@ -316,6 +337,16 @@ nav {
   margin-top: 200vh;
   background-color: beige;
 }
+@media screen and (max-width: 1100px) {
+  .about-contact {
+    height: 150vh;
+  }
+}
+@media screen and (max-width: 990px) {
+  .about-contact {
+    margin-top: 160vh;
+  }
+}
 
 .about-container {
   position: relative;
@@ -324,6 +355,13 @@ nav {
   align-items: center;
   height: 60vh;
   width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+  }
 }
 
 .info-container-5 {
@@ -340,11 +378,29 @@ nav {
   font-weight: 500;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 1300px) {
+  .info-container-5 h1 {
+    font-size: 42px;
+  }
+}
 .info-container-5 p {
   margin-top: 1rem;
   font-family: "Poppins";
   font-weight: 300;
   font-size: 0.833333333rem;
+}
+@media screen and (max-width: 1100px) {
+  .info-container-5 p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .info-container-5 {
+    width: 80%;
+  }
+  .info-container-5 h1 {
+    font-size: 48px;
+  }
 }
 
 .info-container-6 {
@@ -362,8 +418,14 @@ nav {
 }
 .gif-container img {
   border-radius: 50%;
-  max-height: 50%;
+  max-height: 80%;
   width: auto;
+}
+@media screen and (max-width: 1100px) {
+  .gif-container {
+    height: 30%;
+    margin-left: 0;
+  }
 }
 
 .contact-container {
@@ -378,9 +440,19 @@ nav {
   font-weight: 500;
   font-family: "Playfair Display";
 }
+@media screen and (max-width: 1300px) {
+  .contact-container h1 {
+    font-size: 4rem;
+  }
+}
 .contact-container h2 {
   font-weight: 400;
   font-family: "Playfair Display";
+}
+@media screen and (max-width: 1300px) {
+  .contact-container h2 {
+    font-size: 1rem;
+  }
 }
 
 .attn-container {
@@ -390,12 +462,45 @@ nav {
   flex-direction: column;
   width: 100%;
 }
+@media screen and (max-width: 900px) {
+  .attn-container h1 {
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .attn-container h1 {
+    font-size: 42px;
+  }
+}
 
 .contact-information {
   display: inline-flex;
   justify-content: space-between;
-  width: 60%;
+  width: max(60%, 1100px);
   margin-top: 2rem;
+}
+@media screen and (max-width: 1300px) {
+  .contact-information {
+    width: 900px;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contact-information {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contact-information {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact-information {
+    max-width: 400px;
+  }
 }
 
 .info-box {
@@ -409,6 +514,11 @@ nav {
 }
 .info-box a {
   text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  .info-box {
+    margin-top: 1rem;
+  }
 }
 
 .menu-btn {
