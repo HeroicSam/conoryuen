@@ -441,6 +441,10 @@ nav {
 			font-size: 48px;
 		}
 	}
+
+	@media screen and (max-width:500px) {
+		margin-top: 5rem;
+	}
 }
 
 .info-container-6 {
@@ -512,6 +516,8 @@ nav {
 		h1 {
 			font-size: 42px;
 		}
+
+		margin-top: 4rem;
 	}
 
 }

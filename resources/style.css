@@ -402,6 +402,11 @@ nav {
     font-size: 48px;
   }
 }
+@media screen and (max-width: 500px) {
+  .info-container-5 {
+    margin-top: 5rem;
+  }
+}
 
 .info-container-6 {
   text-align: justify;
@@ -468,6 +473,9 @@ nav {
   }
 }
 @media screen and (max-width: 700px) {
+  .attn-container {
+    margin-top: 4rem;
+  }
   .attn-container h1 {
     font-size: 42px;
   }
