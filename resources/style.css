@@ -402,7 +402,7 @@ nav {
     font-size: 48px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .info-container-5 {
     margin-top: 5rem;
   }
@@ -428,7 +428,7 @@ nav {
 }
 @media screen and (max-width: 1100px) {
   .gif-container {
-    height: 30%;
+    height: 40%;
     margin-left: 0;
   }
 }
