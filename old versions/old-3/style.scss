@@ -25,7 +25,6 @@ body {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
     font-size: $fs-primary;
-	
 }
 
 html {
@@ -151,8 +150,15 @@ nav {
 
 // Landing Page
 
+.main-contianer {
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+
+
 .main-container {
-	position: relative;
+	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -211,13 +217,14 @@ nav {
 // Portfolio section
 
 .portfolio-container {
-	position:relative;
+	position:absolute;
 	display: inline-flex;
 	height: 100vh;
 	width: 100%;
+	margin-top: 100vh;
 
 	@media screen and (max-width: 990px) {
-		height: 80vh;
+		height: 60vh;
 
 	}
 }
@@ -361,79 +368,213 @@ nav {
 
 // About/Contact 
 
-.about {
+.about-contact {
+	position:absolute;
+	display:flex;
+	flex-direction: column;
+	height: 110vh;
+	min-height: 1188px;
+	width: 100%;
+	margin-top: 200vh;
+	background-color: beige;
+
+	@media screen and (max-width:1100px) {
+		height: 180vh;
+	}
+
+	@media screen and (max-width: 990px) {
+		margin-top: 160vh;
+
+	}
+}
+
+.about-container {
 	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10vh;
+	height: 60vh;
+	width: 100%;
+
+	@media screen and (max-width:1100px) {
+		display: flex;
+		flex-direction: column;
+		height: 70vh;
+	}
+}
+
+.info-container-5 {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	background-color: beige;
-	padding: 10% 5%;
+	align-items: flex-start;
+	justify-content: center;
+	margin-left: 5%;
+	width: 40%;
 
 	h1 {
 		font-family: $ff-primary;
+		font-size: 2.5rem;
 		font-weight: 500;
+		margin-bottom: 1rem;
+
+		@media screen and (max-width: 1300px) {
+			font-size: 42px;
+		}
 	}
 
 	p {
-		font-size: 18px;
+		margin-top: 1rem;
 		font-family: $ff-secondary;
-		text-align: justify;
+		font-weight: 300;
+		font-size: 0.833333333rem;
+
+		@media screen and (max-width:1100px) {
+			font-size: 16px;
+		}
+
 	}
 
-	img {
-		border-radius: 50%;
-		width: 50%;
-		height: auto;
+	@media screen and (max-width:1100px) {
+		width: 80%;
+
+		h1 {
+			font-size: 48px;
+		}
+	}
+
+	@media screen and (max-width:550px) {
+		margin-top: 5rem;
 	}
 }
 
 .info-container-6 {
-	border-top: .5px solid black;
-	margin-top: 5%;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	text-align: justify;
+	border-top: 1px solid black;
 }
 
-@media screen and (min-width: 1000px) {
+.gif-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 70%;
+	width: auto;
+	margin-left: 4rem;
 
-	.about {
-		display: inline-flex;
-		flex-direction: row;
+	img {
+		border-radius: 50%;
+		height: 60%;
+		width: auto;
+	}
 
+	@media screen and (max-width:1100px) {
+		height: 40%;
+		margin-left: 0;
+	}
+}
+
+.contact-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+	h1 {
+		font-size: 6rem;
+		font-weight: 500;
+		font-family: $ff-primary;
+
+		@media screen and (max-width: 1300px) {
+			font-size: 4rem;
+		}
+	}
+
+	h2 {
+		font-weight: 400;
+		font-family: $ff-primary;
+
+		@media screen and (max-width: 1300px) {
+			font-size: 1rem;
+		}
+	}
+
+	@media screen and (max-height:780px) {
+		margin-top: 10vh;
+	}
+}
+
+.attn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+
+	@media screen and (max-width: 900px) {
 		h1 {
 			font-size: 64px;
 		}
+	}
 
-		img {
-			width: 25%;
-			margin-left: 5%;
+	@media screen and (max-width: 700px) {
+		h1 {
+			font-size: 42px;
 		}
-	}
 
-	.info-container-5 {
-		width: 65%;
+		margin-top: 4rem;
 	}
-
 
 }
 
-@media screen and (min-width: 1300px) {
+.contact-information {
+	display: inline-flex;
+	justify-content: space-between;
+	width: max(60%, 1100px);
+	margin-top: 2rem;
 
-	.about {
+	@media screen and (max-width: 1300px) {
+		width: 900px;
 
-		padding: 5% 5%;
+		margin-top: 1rem	}
 
-		p {
-			font-size: 24px;
-		}
-
-		img {
-			width: 20%;
-		}
+	@media screen and (max-width: 900px) {
+		max-width: 700px;
+		display: flex;
+		flex-direction: column;
 	}
 
+	@media screen and (max-width: 700px) {
+		max-width: 500px;
 
+	}
+
+	@media screen and (max-width: 500px) {
+		max-width: 400px;
+
+	}
 }
+
+.info-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	h2 {
+		margin-top: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	@media screen and (max-width: 900px) {
+		margin-top: 1rem;
+	}
+}
+
+
 
 // Hamburger Menu
 
