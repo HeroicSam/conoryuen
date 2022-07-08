@@ -60,7 +60,7 @@ header {
 .menu {
   display: inline-flex;
   width: max(15vw, 350px);
-  max-width: 350px;
+  max-width: 300px;
   justify-content: space-between;
   font-weight: medium;
   font-size: 18px;
@@ -327,7 +327,7 @@ nav {
   flex-direction: column;
   align-items: center;
   background-color: beige;
-  padding: 10% 5%;
+  padding: 10% 5% 5%;
 }
 .about h1 {
   font-family: "Playfair Display";
@@ -346,7 +346,6 @@ nav {
 
 .info-container-6 {
   border-top: 0.5px solid black;
-  margin-top: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -369,7 +368,7 @@ nav {
 }
 @media screen and (min-width: 1300px) {
   .about {
-    padding: 5% 5%;
+    padding: 5% 5% 0%;
   }
   .about p {
     font-size: 20px;
@@ -427,7 +426,7 @@ nav {
 
 @media screen and (min-width: 1000px) {
   .contact {
-    font-size: 64px;
+    font-size: 80px;
     padding: 0 5%;
     align-items: flex-start;
     padding-bottom: 5%;
@@ -450,6 +449,9 @@ nav {
   }
 }
 @media screen and (min-width: 1300px) {
+  .contact {
+    font-size: 88px;
+  }
   .contact-information {
     gap: 5%;
   }
@@ -458,11 +460,14 @@ nav {
   }
 }
 @media screen and (min-width: 1600px) {
+  .contact {
+    font-size: 104px;
+  }
   .contact-information {
     gap: 5%;
   }
   .info-box {
-    width: 10%;
+    width: 12%;
   }
 }
 .menu-btn {
