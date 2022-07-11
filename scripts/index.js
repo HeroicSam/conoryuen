@@ -27,6 +27,7 @@ const header = document.querySelector('header');
 const sectionOne = document.querySelector('main');
 const headerName = document.querySelector('.name');
 const menu = document.querySelector('.menu');
+const nav = document.querySelector('.menu-mobile');
 
 const faders = document.querySelectorAll('.fade-in');
 const leftSliders = document.querySelectorAll('.left-slide');
@@ -43,12 +44,16 @@ const sectionOneObserver = new IntersectionObserver(function(
                 header.classList.remove('nav-unscrolled');
                 menu.classList.remove('nav-unscrolled-2');
                 header.classList.add('header-display');
+                nav.classList.add('menu-mobile-scrolled');
+                nav.classList.remove('menu-mobile-unscrolled');
             } else {
                 header.classList.remove('header-display');
                 headerName.classList.remove('nav-scrolled');
                 menu.classList.remove('nav-scrolled-2');
                 header.classList.add('nav-unscrolled');
                 menu.classList.add('nav-unscrolled-2');
+                nav.classList.add('menu-mobile-unscrolled');
+                nav.classList.remove('menu-mobile-scrolled');
             }
         });
 
