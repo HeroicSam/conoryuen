@@ -447,10 +447,10 @@ nav {
   animation: slideDown 2.7s ease-in-out forwards; }
 
 .menu-mobile-scrolled {
-  animation: slideToLeft 2s ease-in-out forwards; }
+  animation: slideToLeft 1s ease-in-out forwards; }
 
 .menu-mobile-unscrolled {
-  animation: slideFromLeft 2s ease-in-out forwards; }
+  animation: slideFromLeft 1s ease-in-out forwards; }
 
 .left-slide {
   opacity: 0;
