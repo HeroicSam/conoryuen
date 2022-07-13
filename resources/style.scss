@@ -179,14 +179,45 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 
-	width: 75%;
+	width: 60%;
 	height: 20%;
 	transform: translateX(0%);
 
+	@media screen and (min-width: 400px) {
+		width: 80%;
+	}
+
+	@media screen and (min-width: 1650px) {
+		width: 60%;
+	}
+
 	h1 {
 		font-weight: 300;
-		font-size: 60px;
 		font-family: $ff-primary;
+
+		@media screen and (min-width: 400px) {
+			font-size: 18px;
+		}
+
+		@media screen and (min-width: 800px) {
+			font-size: 32px;
+		}
+
+		@media screen and (min-width: 1000px) {
+			font-size: 38px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			font-size: 46px;
+		}
+
+		@media screen and (min-width: 1650px) {
+			font-size: 50px;
+		}
+
+		@media screen and (min-width: 2000px) {
+			font-size: 56px;
+		}
 	}
 }
 
@@ -544,7 +575,7 @@ nav {
 @media screen and (min-width: 1600px) {
 
 	.contact {
-		font-size: 104px;
+		font-size: 112px;
 	}
 
 	.contact-information {
