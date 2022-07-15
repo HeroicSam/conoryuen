@@ -45,6 +45,12 @@ h1 {
 	
 }
 
+h3 {
+	font-family: $ff-secondary;
+	font-weight: 800;
+	font-size: .5rem;
+}
+
 h4 {
 	font-family: $ff-primary;
 	font-size: .6rem;
@@ -58,8 +64,6 @@ p {
 }
 
 .image-container {
-
-	height: 90vh;
 
 	img {
 		width: 100%;

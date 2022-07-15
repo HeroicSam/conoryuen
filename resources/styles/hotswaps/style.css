@@ -29,6 +29,12 @@ h1 {
   border-bottom: 1px solid black;
 }
 
+h3 {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 0.5rem;
+}
+
 h4 {
   font-family: "Playfair Display";
   font-size: 0.6rem;
@@ -41,9 +47,6 @@ p {
   font-size: 0.5rem;
 }
 
-.image-container {
-  height: 90vh;
-}
 .image-container img {
   width: 100%;
   height: auto;
