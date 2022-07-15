@@ -59,7 +59,7 @@ h4 {
 
 p {
 	font-family: $ff-secondary;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: .5rem;
 }
 
@@ -99,12 +99,9 @@ body {
 	margin-bottom: 2rem;
 }
 
-.intro-info {
-
-}
-
 @media screen and (max-width: 600px) {
 	.intro-info {
 		display: none;
 	}
 }
+
