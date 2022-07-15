@@ -28,7 +28,7 @@ body {
 }
 
 body {
-	padding: 5%;
+	padding: 0 5% 0;
 }
 
 html {
@@ -36,10 +36,35 @@ html {
 	background-color: white;
 }
 
+h1 {
+	font-family: $ff-primary;
+	font-weight: 400;
+	margin: 0;
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+	
+}
+
 h4 {
 	font-family: $ff-primary;
 	font-size: .6rem;
 	font-weight: 400;
+}
+
+p {
+	font-family: $ff-secondary;
+	font-weight: 400;
+	font-size: .5rem;
+}
+
+.image-container {
+
+	height: 90vh;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 // Header
@@ -56,5 +81,26 @@ header {
 			height: auto;
 			transform: rotate(90deg);
 		}
+	}
+}
+
+// Body
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.overview {
+	margin-bottom: 2rem;
+}
+
+.intro-info {
+
+}
+
+@media screen and (max-width: 600px) {
+	.intro-info {
+		display: none;
 	}
 }

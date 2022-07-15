@@ -13,7 +13,7 @@ body {
 }
 
 body {
-  padding: 5%;
+  padding: 0 5% 0;
 }
 
 html {
@@ -21,10 +21,32 @@ html {
   background-color: white;
 }
 
+h1 {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
 h4 {
   font-family: "Playfair Display";
   font-size: 0.6rem;
   font-weight: 400;
+}
+
+p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 0.5rem;
+}
+
+.image-container {
+  height: 90vh;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
 }
 
 header a {
@@ -37,6 +59,21 @@ header a img {
   width: 16px;
   height: auto;
   transform: rotate(90deg);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .intro-info {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
