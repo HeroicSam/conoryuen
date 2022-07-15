@@ -141,14 +141,6 @@ nav {
   z-index: -5;
 }
 
-.video-container {
-  height: 100vh;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 .intro {
   position: absolute;
   display: flex;
