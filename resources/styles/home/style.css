@@ -271,13 +271,8 @@ nav {
 .info-container-3 h3 {
   font-family: "Poppins";
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 0;
-}
-@media screen and (max-width: 500px) {
-  .info-container-3 h3 {
-    font-size: 20px;
-  }
 }
 
 .info-container-4 {
@@ -286,7 +281,7 @@ nav {
 }
 .info-container-4 p {
   font-family: "Poppins";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
 }
 @media screen and (max-width: 500px) {

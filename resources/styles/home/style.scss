@@ -298,12 +298,12 @@ nav {
 	h3 {
 		font-family: $ff-secondary;
 		font-weight: 500;
-		font-size: 24px;
+		font-size: 20px;
 		margin-bottom: 0;
 
-		@media screen and (max-width: 500px) {
-			font-size: 20px;
-		}
+		// @media screen and (max-width: 500px) {
+		// 	font-size: 20px;
+		// }
 		
 	}
 
@@ -315,7 +315,7 @@ nav {
 
 	p {
 		font-family: $ff-secondary;
-		font-size: 14px;
+		font-size: 12px;
 		font-weight: 300;
 
 		@media screen and (max-width: 500px) {
