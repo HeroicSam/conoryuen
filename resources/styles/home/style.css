@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 24px;
+  overflow-x: hidden;
 }
 
 html {
@@ -136,8 +137,9 @@ nav {
   color: white;
 }
 .main-container video {
+  width: 100%;
   height: 100vh;
-  object-fit: fill;
+  object-fit: cover;
   z-index: -5;
 }
 
@@ -220,7 +222,7 @@ nav {
   position: relative;
   display: inline-flex;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 @media screen and (max-width: 990px) {
   .portfolio-container {
@@ -236,6 +238,7 @@ nav {
   margin-top: 4rem;
   margin-left: 5%;
   width: 50%;
+  z-index: 100;
 }
 .info-container h1 {
   font-family: "Playfair Display";
@@ -303,12 +306,8 @@ nav {
   background-color: #DFFCE6;
 }
 
-.hotswaps-active {
-  background: linear-gradient(#72C6EF, #004E8F);
-}
-
 .hotswaps-asset {
-  background-image: url("./img/hotswaps.png");
+  background-image: url("../../img/hotswaps.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -321,11 +320,12 @@ nav {
 }
 
 .allodds-active {
+  background: linear-gradient(#C84E89, #F15F79);
   background: linear-gradient(135deg, #BDA1A4, #566191);
 }
 
 .allodds-asset {
-  background-image: url("./img/allodds2x.png");
+  background-image: url("../../img/allodds2x.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -342,22 +342,22 @@ nav {
 }
 
 .personal-asset {
-  background-image: url("./img/personalsite.png");
+  background-image: url("../../img/personalsite.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
-.img-container {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1100px) {
   .img-container {
     display: none;
   }
+}
+
+.videoPlayer {
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .about {
