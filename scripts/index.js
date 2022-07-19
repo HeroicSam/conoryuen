@@ -144,6 +144,9 @@ menuBtn.addEventListener('click', () => {
 
 // jQuery
 
+var hotswapsVideo = './resources/img/hotswaps.mp4';
+var aaoVideo = './resources/img/aao.mp4';
+
 $(document).ready(function() {
     // $("#hotswaps").hover(function() {
     //     $(".img-container").addClass("hotswaps-active");
@@ -154,16 +157,11 @@ $(document).ready(function() {
     // });
 
     $("#allodds").hover(function() {
-        $(".img-container").addClass("allodds-active");
-        $(".asset-container").addClass("allodds-asset");
-        $(".img-container").removeClass("hotswaps-active");
-        $(".asset-container").removeClass("hotswaps-asset");
+        $('.img-container video source').attr('src', aaoVideo);
+        $(".img-container video")[0].load();       
     }, function () {
-        $(".img-container").removeClass("allodds-active");
-        $(".asset-container").removeClass("allodds-asset");
-        $(".img-container").addClass("hotswaps-active");
-        $(".asset-container").addClass("hotswaps-asset");
-        
+        $('.img-container video source').attr('src', hotswapsVideo);
+        $(".img-container video")[0].load(); 
     });
 
     $("#personal").hover(function() {

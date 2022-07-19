@@ -301,6 +301,18 @@ nav {
   background-color: #DFFCE6;
 }
 
+#allodds:hover {
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+  background-color: #E6DFFC;
+}
+
+#personal:hover {
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+  background-color: #FCE6DF;
+}
+
 @media screen and (max-width: 1100px) {
   .img-container {
     display: none;
