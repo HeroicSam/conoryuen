@@ -301,48 +301,6 @@ nav {
   background-color: #DFFCE6;
 }
 
-.hotswaps-asset {
-  background-image: url("../../img/hotswaps.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-#allodds:hover {
-  cursor: pointer;
-  transition: background-color 0.5s ease-in-out;
-  background-color: #E6DFFC;
-}
-
-.allodds-active {
-  background: linear-gradient(#C84E89, #F15F79);
-  background: linear-gradient(135deg, #BDA1A4, #566191);
-}
-
-.allodds-asset {
-  background-image: url("../../img/allodds2x.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-#personal:hover {
-  cursor: pointer;
-  transition: background-color 0.5s ease-in-out;
-  background-color: #FCE6DF;
-}
-
-.personal-active {
-  background: linear-gradient(#4776E6, #8E54E9);
-}
-
-.personal-asset {
-  background-image: url("../../img/personalsite.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
 @media screen and (max-width: 1100px) {
   .img-container {
     display: none;
