@@ -146,6 +146,7 @@ menuBtn.addEventListener('click', () => {
 
 var hotswapsVideo = './resources/img/hotswaps.mp4';
 var aaoVideo = './resources/img/aao.mp4';
+var personalVideo = './resources/img/personal.mp4'
 
 $(document).ready(function() {
     // $("#hotswaps").hover(function() {
@@ -165,15 +166,11 @@ $(document).ready(function() {
     });
 
     $("#personal").hover(function() {
-        $(".img-container").addClass("personal-active");
-        $(".asset-container").addClass("personal-asset");
-        $(".img-container").removeClass("hotswaps-active");
-        $(".asset-container").removeClass("hotswaps-asset");
+        $('.img-container video source').attr('src', personalVideo);
+        $(".img-container video")[0].load();  
     }, function() {
-        $(".img-container").removeClass("personal-active");
-        $(".asset-container").removeClass("personal-asset");
-        $(".img-container").addClass("hotswaps-active");
-        $(".asset-container").addClass("hotswaps-asset");
+        $('.img-container video source').attr('src', hotswapsVideo);
+        $(".img-container video")[0].load(); 
     });
 });
 
