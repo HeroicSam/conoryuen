@@ -330,7 +330,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: beige;
+  background-color: #F7E3AF;
   padding: 10% 5% 5%;
 }
 .about h1 {
@@ -401,7 +401,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: beige;
+  background-color: #F7E3AF;
   padding: 5% 5%;
 }
 .contact h1 {

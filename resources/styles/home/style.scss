@@ -3,6 +3,7 @@
 $text-primary: #000;
 $text-titles: #B1B1B1;
 $text-inverse: #FFF;
+$bkg-secondary: #F7E3AF;
 
 $ff-primary: 'Playfair Display';
 $ff-secondary: 'Poppins';
@@ -402,7 +403,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: beige;
+	background-color: $bkg-secondary;
 	padding: 10% 5% 5%;
 
 	h1 {
@@ -500,7 +501,7 @@ nav {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: beige;
+	background-color: $bkg-secondary;
 	padding: 5% 5%;
 
 	h1 {
