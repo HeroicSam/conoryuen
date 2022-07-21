@@ -85,6 +85,7 @@ span {
 
 video {
 	width: 100%;
+	background-color: white;
 }
 
 .image-container {
@@ -95,6 +96,13 @@ video {
 		width: 100%;
 		height: auto;
 	}
+}
+
+.fill {
+	width: 110%;
+	object-fit: cover;
+	transform: translateX(-5%);
+	margin: 5% 0;
 }
 
 // Header
