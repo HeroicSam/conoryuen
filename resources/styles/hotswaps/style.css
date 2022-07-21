@@ -20,14 +20,14 @@ html {
 h1 {
   font-family: "Playfair Display";
   font-weight: 400;
-  margin: 0;
-  padding-bottom: 5px;
-  border-bottom: 1px solid black;
+  margin: 1.5rem 0 0 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid gray;
 }
 
 h3 {
   font-family: "Poppins";
-  font-weight: 800;
+  font-weight: 600;
   font-size: 0.55rem;
   border-top: 1px solid gray;
   padding-top: 6px;
@@ -63,6 +63,14 @@ section {
   padding: 0 5% 0;
 }
 
+span {
+  background-color: yellow;
+}
+
+video {
+  width: 100%;
+}
+
 .image-container {
   padding: 0;
 }
@@ -95,6 +103,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+.overview p {
+  margin: 8px 0;
 }
 
 .intro-info {
