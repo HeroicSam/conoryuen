@@ -79,12 +79,12 @@ p {
 
 ul {
 	padding: 0;
+	padding-left: 1rem;
 	margin-top: 4px;
 	margin-bottom: 0px;
 }
 
 li {
-	list-style: none;
 	font-family:$ff-secondary;
 	font-weight: 300;
 	font-size: .55rem;
@@ -114,6 +114,10 @@ video {
 		width: 100%;
 		height: auto;
 	}
+}
+
+b {
+	font-weight: 600;
 }
 
 // Header
@@ -175,6 +179,10 @@ body {
 
 	h3 {
 		border: none;
+	}
+
+	ul {
+		list-style: none;
 	}
 }
 
