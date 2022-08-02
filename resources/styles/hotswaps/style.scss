@@ -43,6 +43,7 @@ h1 {
 	font-weight: 400;
 	margin: 1.5rem 0 0 0;
 	padding-bottom: 16px;
+	font-size: 2rem;
 	// border-bottom: 1px solid gray;
 }
 
@@ -109,7 +110,7 @@ li {
 }
 
 section {
-	padding: 5% 5% 5%;
+	padding: 5% 5%;
 
 	video {
 
@@ -119,7 +120,7 @@ section {
 	}
 
 	@media screen and (min-width: 1000px) {
-		padding: 2% 15% 5%;
+		padding: 5% 15%;
 	}
 }
 
@@ -150,6 +151,26 @@ b {
 	}
 }
 
+.img-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		margin-top: 1rem;
+		width: 100%;
+
+		@media screen and (min-width: 700px) {
+			width: 70%;
+		}
+
+		@media screen and (min-width: 700px) {
+			margin-top: 2rem;
+			width: 60%;
+		}
+	}
+}
+
 .bkg {
 	background-color: $bkg-section;
 }
@@ -175,6 +196,10 @@ b {
 }
 
 .small-flex-container {
+
+	ul {
+		margin-top: .4rem;
+	}
 
 	@media screen and (min-width: 1000px) {
 		display: flex;
@@ -352,7 +377,8 @@ body {
 	}
 
 	@media screen and (min-width: 1000px) {
-		padding-bottom: 0;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
 	}
 }
 
@@ -362,7 +388,7 @@ body {
 	grid-template-rows: 1fr 1fr;
 	row-gap: 5%;
 	column-gap: 5%;
-	margin-top: .5rem;
+	margin-top: 1.5rem;
 	margin-bottom: .5rem;
 
 	h3 {
