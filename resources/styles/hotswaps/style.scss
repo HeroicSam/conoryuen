@@ -4,7 +4,8 @@ $text-primary: #000;
 $text-titles: #B1B1B1;
 $text-inverse: #FFF;
 
-$bkg-section: #e6dfeb;
+// $bkg-section: #e6dfeb;
+$bkg-section: #cbdcf8;
 
 $ff-primary: 'Playfair Display';
 $ff-secondary: 'Poppins';
@@ -171,8 +172,22 @@ b {
 	}
 }
 
+.img-container-2 {
+	display: flex;
+	justify-content: center;
+	padding-top: 0;
+
+	 img {
+		width: 95%;
+	 }
+} 
+
 .bkg {
 	background-color: $bkg-section;
+}
+
+.bkg-2 {
+	background-color: #E8B051;
 }
 
 .section-margin {
@@ -247,8 +262,8 @@ header {
 	display: inline-flex;
 	justify-content: space-between;
 	align-items: center;
-	width: max(15vw, 350px);
-	max-width: 300px;
+	width: max(20vw, 400px);
+	max-width: 340px;
 	justify-content: space-between;
 	
 

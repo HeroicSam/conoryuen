@@ -113,8 +113,18 @@ b {
         margin-top: 2rem;
         width: 60%; } }
 
+.img-container-2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 0; }
+  .img-container-2 img {
+    width: 95%; }
+
 .bkg {
-  background-color: #e6dfeb; }
+  background-color: #cbdcf8; }
+
+.bkg-2 {
+  background-color: #E8B051; }
 
 .section-margin {
   margin-top: 2rem; }
@@ -167,8 +177,8 @@ header {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  width: max(15vw, 350px);
-  max-width: 300px;
+  width: max(20vw, 400px);
+  max-width: 340px;
   justify-content: space-between; }
   .menu p {
     font-weight: 500;
