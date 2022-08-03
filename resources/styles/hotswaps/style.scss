@@ -5,7 +5,8 @@ $text-titles: #B1B1B1;
 $text-inverse: #FFF;
 
 // $bkg-section: #e6dfeb;
-$bkg-section: #cbdcf8;
+// $bkg-section: #cbdcf8;
+$bkg-section: #eef7ff;
 
 $ff-primary: 'Playfair Display';
 $ff-secondary: 'Poppins';
@@ -179,6 +180,7 @@ b {
 
 	 img {
 		width: 95%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	 }
 } 
 
@@ -187,7 +189,7 @@ b {
 }
 
 .bkg-2 {
-	background-color: #E8B051;
+	background-color: #5db1fe;
 }
 
 .section-margin {

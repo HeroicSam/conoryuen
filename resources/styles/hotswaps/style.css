@@ -118,13 +118,14 @@ b {
   justify-content: center;
   padding-top: 0; }
   .img-container-2 img {
-    width: 95%; }
+    width: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .bkg {
-  background-color: #cbdcf8; }
+  background-color: #eef7ff; }
 
 .bkg-2 {
-  background-color: #E8B051; }
+  background-color: #5db1fe; }
 
 .section-margin {
   margin-top: 2rem; }
