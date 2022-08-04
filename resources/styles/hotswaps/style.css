@@ -78,9 +78,18 @@ section {
   @media screen and (min-width: 1000px) {
     section {
       padding: 5% 15%; } }
-
-span {
-  background-color: yellow; }
+  @media screen and (min-width: 1450px) {
+    section {
+      padding: 5% 20%; } }
+  @media screen and (min-width: 1920px) {
+    section {
+      padding: 5% 25%; } }
+  @media screen and (min-width: 2300px) {
+    section {
+      padding: 5% 30%; } }
+  @media screen and (min-width: 2700px) {
+    section {
+      padding: 5% 35%; } }
 
 video {
   width: 100%;
@@ -90,10 +99,25 @@ b {
   font-weight: 600; }
 
 .video-container {
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .video-container video {
     width: 100%;
     height: auto; }
+    @media screen and (min-width: 1400px) {
+      .video-container video {
+        width: 80%; } }
+    @media screen and (min-width: 1920px) {
+      .video-container video {
+        width: 70%; } }
+    @media screen and (min-width: 2300px) {
+      .video-container video {
+        width: 60%; } }
+    @media screen and (min-width: 2700px) {
+      .video-container video {
+        width: 50%; } }
   @media screen and (min-width: 1000px) {
     .video-container {
       padding: 0 15%; } }
