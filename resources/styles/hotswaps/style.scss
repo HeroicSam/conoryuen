@@ -54,38 +54,33 @@ h2 {
 	font-weight: 500;
 	font-size: 1rem;
 	margin-top: 20px;
+
+	@media screen and (min-width: 1000px) {
+		margin-top: 0;
+	}
 }
 
 h3 {
 	font-family: $ff-secondary;
-	font-weight: 600;
+	font-weight: 300;
 	font-size: .55rem;
-	border-top: 1px solid gray;
+	color: gray;
 	padding-top: 6px;
-}
 
-h4 {
-	font-family: $ff-primary;
-	font-size: .6rem;
-	font-weight: 400;
-}
-
-h5 {
-	font-family: $ff-secondary;
-	font-weight: 400;
-	text-align: center;
-	margin: 0;
+	@media screen and (min-width: 1000px) {
+		font-size: .65rem;
+	}
 }
 
 p {
 	font-family: $ff-secondary;
 	font-weight: 300;
 	font-size: .55rem;
-	line-height: 1rem;
-	letter-spacing: 1.1px;
+	line-height: 1.5rem;
+	letter-spacing: .75px;
 
-	@media screen and (min-width: 1300px) {
-		font-size: .55rem;
+	@media screen and (min-width: 1000px) {
+		font-size: .65rem;
 	}
 
 }
@@ -101,12 +96,12 @@ li {
 	font-family:$ff-secondary;
 	font-weight: 300;
 	font-size: .55rem;
-	line-height: 1rem;
-	letter-spacing: 1.1px;
+	line-height: 1.5rem;
+	letter-spacing: .75px;
 	margin: 0;
 
-	@media screen and (min-width: 1300px) {
-		font-size: .55rem;
+	@media screen and (min-width: 1000px) {
+		font-size: .65rem;
 	}
 
 }
@@ -114,24 +109,20 @@ li {
 section {
 	padding: 5% 5%;
 
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: 1450px) {
 		padding: 5% 15%;
 	}
 
-	@media screen and (min-width: 1450px) {
+	@media screen and (min-width: 1920px) {
 		padding: 5% 20%;
 	}
 
-	@media screen and (min-width: 1920px) {
+	@media screen and (min-width: 2300px) {
 		padding: 5% 25%;
 	}
 
-	@media screen and (min-width: 2300px) {
-		padding: 5% 30%;
-	}
-
 	@media screen and (min-width: 2700px) {
-		padding: 5% 35%;
+		padding: 5% 30%;
 	}
 }
 
@@ -224,14 +215,22 @@ b {
 	}
 }
 
+.bottom-padding {
+	padding-bottom: 5%;
+}
+
 .p-margin {
 	margin-bottom: 1rem;
 }
 
 .flex-container {
 
+	display: flex;
+	flex-direction: column;
+
 	@media screen and (min-width: 1000px) {
 		display: inline-flex;
+		flex-direction: row;
 		gap: 5%;
 	}
 }
@@ -249,17 +248,25 @@ b {
 	}
 }
 
-.row-container {
+.top-margin {
+	margin-top: 5%;
+
 	@media screen and (min-width: 1000px) {
+		margin-top: 0;
+	}
+}
+
+.row-container {
+	@media screen and (min-width: 700px) {
 		display: inline-flex;
-		gap: 5%;
+		gap: 10%;
 	}
 }
 
 .blurb-container {
 	@media screen and (min-width: 1000px) {
 		display: flex;
-		width: 50%;
+		flex-direction: column;
 	}
 }
 
@@ -409,6 +416,7 @@ body {
 
 .overview {
 	display: flex;
+	gap: 10%;
 	flex-wrap: wrap;
 	flex-direction: column;
 	margin: 0;
@@ -417,19 +425,35 @@ body {
 		margin: 8px 0;
 	}
 
-	@media screen and (min-width: 1000px) {
-		padding-top: 5rem;
-		padding-bottom: 5rem;
+	h1 {
+		margin-top: 0;
+	}
+
+	@media screen and (min-width: 1450px) {
+		padding: 5% 15% 0;
+	}
+
+	@media screen and (min-width: 1920px) {
+		padding: 5% 20% 0;
+	}
+
+	@media screen and (min-width: 2300px) {
+		padding: 5% 25% 0;
+	}
+
+	@media screen and (min-width: 2700px) {
+		padding: 5% 30% 0;
 	}
 }
 
 .intro-info {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	// grid-template-columns: 1fr 1fr;
+	// grid-template-rows: 1fr 1fr;
+	grid-template-columns: 2fr 2fr 1fr 2fr;
 	row-gap: 5%;
 	column-gap: 5%;
-	margin-top: 1.5rem;
+	margin-top: 2rem;
 	margin-bottom: .5rem;
 
 	h3 {
@@ -437,19 +461,21 @@ body {
 	}
 
 	@media screen and (min-width: 1000px) {
-		width: 50%;
-		row-gap: 10%;
-		column-gap: 0%;
+		width: 100%;
+		row-gap: 5%;
+		column-gap: 5%;
 	}
 }
 
 .sub-container {
 
-	margin: 0;
-	padding: 0;
+	// margin: 0;
+	// padding: 0;
+	width: auto;
 
 	h3 {
 		border: none;
+		margin-bottom: .75rem;
 	}
 
 	ul {
@@ -478,11 +504,11 @@ body {
 	justify-items: center;
 }
 
-.no-margin {
-	@media screen and (min-width: 1000px) {
-		margin-top: .1rem;
-	}
-}
+// .no-margin {
+// 	@media screen and (min-width: 1000px) {
+// 		margin-top: .1rem;
+// 	}
+// }
 
 .menu-btn.open .menu-btn_burger {
 	transform: translateX(-50px);
