@@ -239,12 +239,10 @@ nav {
   background-color: #DFFCE6; }
 
 #allodds:hover {
-  cursor: pointer;
   transition: background-color .5s ease-in-out;
   background-color: #E6DFFC; }
 
 #personal:hover {
-  cursor: pointer;
   transition: background-color .5s ease-in-out;
   background-color: #FCE6DF; }
 
